@@ -1,0 +1,20 @@
+
+POM design prvided by Martin Folwer
+POM: Design Pattern
+DD:
+Libraries:Generic Functions
+TDD : test data driven
+==> Hybrid with POM design pattern 
+
+POM:
+Page:
+1)for every page in web/mobile app, we need to  create separate page java class.
+2) Never use assertions in page class
+3) Page actions needs to provide page behaviour.
+4) Page locators(By) should be private and will be accessed via public page actions.
+
+
+Test:1) Have to use a test client : TestNG/Junit/pytest/Nunit/Jasmine/Mocha.
+2) Assertions should be written in test class
+3) Never use driver apis in test class
+   
