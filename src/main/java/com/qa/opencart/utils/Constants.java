@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Constants {
 
-    public static  final String LOGIN_PAGE_TITLE ="Account Logina";
+    public static  final String LOGIN_PAGE_TITLE ="Account Login";
     public static final String LOGIN_PAGE_URL_FRACTION = "route=account/login";
 
     public static final String ACCOUNTS_PAGE_TITLE ="My Account";
-    public static final int DEFAULT_TIMEOUT =5;
+    public static final int DEFAULT_TIMEOUT =7;
     public static final int IMAC_IMAGES_COUNT = 3;
 
     public static final int MACBOOKAIR_IMAGES_COUNT = 4;
