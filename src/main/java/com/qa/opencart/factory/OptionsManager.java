@@ -6,15 +6,15 @@ import java.util.Properties;
 
 public class OptionsManager {
 
-	private Properties prop;
-	private ChromeOptions co;
+	private static Properties prop;
+	private static ChromeOptions co;
 	private FirefoxOptions fo;
 
 	public OptionsManager(Properties prop)
 	{
 		this.prop = prop;
 	}
-	public ChromeOptions getChromeOptions()
+	public static  ChromeOptions getChromeOptions()
 	{
 		co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
