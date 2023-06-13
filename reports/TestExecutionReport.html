@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Open Cart Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 13, 2023 02:45:41 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jun 13, 2023 05:25:50 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -77,8 +72,6 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -86,82 +79,47 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">OpenCartTestSuite</a>
+<a class="dropdown-item" href="#">OpenCartTestSuite</a><a class="dropdown-item" href="#">AccountsPageTest</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">accPageTitleTest</p>
             <p class="text-sm">
-              <span>2:46:17 pm</span> / <span>00:00:05:412</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>5:26:05 AM</span> / <span>00:00:00:190</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginPageTitleTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:17 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:23 pm</span>
-<span class='badge badge-default'>00:00:05:412</span>
+<h5 class="test-status text-pass">accPageTitleTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:05 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:05 AM</span>
+<span class='badge badge-default'>00:00:00:190</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>2:46:23 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:05 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Logina". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.1.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\P71116~1.INA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.utils.ElementUtil.waitForTitleToBe(ElementUtil.java:368)
-	at com.qa.opencart.utils.ElementUtil.doGetTitle(ElementUtil.java:355)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:35)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Projects\April042023POMseries/screenshots/1683969383662.png' src="D:\Projects\April042023POMseries/screenshots/1683969383662.png">
-    
-    </div></div>
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -169,76 +127,41 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">accPageHeaderTest</p>
             <p class="text-sm">
-              <span>2:46:23 pm</span> / <span>00:00:05:183</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>5:26:05 AM</span> / <span>00:00:00:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginPageTitleTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:23 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:29 pm</span>
-<span class='badge badge-default'>00:00:05:183</span>
+<h5 class="test-status text-pass">accPageHeaderTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:05 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:06 AM</span>
+<span class='badge badge-default'>00:00:00:159</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>2:46:29 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:06 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Logina". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.1.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\P71116~1.INA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.utils.ElementUtil.waitForTitleToBe(ElementUtil.java:368)
-	at com.qa.opencart.utils.ElementUtil.doGetTitle(ElementUtil.java:355)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:35)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Projects\April042023POMseries/screenshots/1683969389329.png' src="D:\Projects\April042023POMseries/screenshots/1683969389329.png">
-    
-    </div></div>
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -246,76 +169,41 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">isLogoutLinkExist</p>
             <p class="text-sm">
-              <span>2:46:29 pm</span> / <span>00:00:05:232</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>5:26:06 AM</span> / <span>00:00:00:101</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginPageTitleTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:29 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:34 pm</span>
-<span class='badge badge-default'>00:00:05:232</span>
+<h5 class="test-status text-pass">isLogoutLinkExist</h5>
+<span class='badge badge-success'>06.13.2023 5:26:06 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:06 AM</span>
+<span class='badge badge-default'>00:00:00:101</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>2:46:34 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:06 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Logina". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.1.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\P71116~1.INA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.utils.ElementUtil.waitForTitleToBe(ElementUtil.java:368)
-	at com.qa.opencart.utils.ElementUtil.doGetTitle(ElementUtil.java:355)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:35)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Projects\April042023POMseries/screenshots/1683969394811.png' src="D:\Projects\April042023POMseries/screenshots/1683969394811.png">
-    
-    </div></div>
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -323,76 +211,41 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">accountPageSectionsTest</p>
             <p class="text-sm">
-              <span>2:46:34 pm</span> / <span>00:00:05:195</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:26:06 AM</span> / <span>00:00:00:283</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginPageTitleTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:34 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-default'>00:00:05:195</span>
+<h5 class="test-status text-pass">accountPageSectionsTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:06 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:06 AM</span>
+<span class='badge badge-default'>00:00:00:283</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:46:40 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:06 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Logina". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.1.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\P71116~1.INA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.utils.ElementUtil.waitForTitleToBe(ElementUtil.java:368)
-	at com.qa.opencart.utils.ElementUtil.doGetTitle(ElementUtil.java:355)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:35)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Projects\April042023POMseries/screenshots/1683969400691.png' src="D:\Projects\April042023POMseries/screenshots/1683969400691.png">
-    
-    </div></div>
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -402,12 +255,12 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
         </li>
         <li class="test-item"  status="pass" test-id="5"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageUrlTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>2:46:40 pm</span> / <span>00:00:00:021</span>
+              <span>5:26:09 AM</span> / <span>00:00:01:673</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -415,16 +268,16 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginPageUrlTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-default'>00:00:00:021</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:09 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:10 AM</span>
+<span class='badge badge-default'>00:00:01:673</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -432,7 +285,7 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:46:40 pm</td>
+        <td>5:26:10 AM</td>
         <td>
           Test passed
         </td>
@@ -444,12 +297,12 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">forgotPasswordLinkTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>2:46:40 pm</span> / <span>00:00:00:102</span>
+              <span>5:26:10 AM</span> / <span>00:00:00:882</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -457,16 +310,16 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">forgotPasswordLinkTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-default'>00:00:00:102</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:10 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:11 AM</span>
+<span class='badge badge-default'>00:00:00:882</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -474,7 +327,7 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:46:40 pm</td>
+        <td>5:26:11 AM</td>
         <td>
           Test passed
         </td>
@@ -486,12 +339,12 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
         </li>
         <li class="test-item"  status="pass" test-id="7"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">isRegisterLinkExistTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>2:46:40 pm</span> / <span>00:00:00:074</span>
+              <span>5:26:11 AM</span> / <span>00:00:00:816</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -499,16 +352,16 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">isRegisterLinkExistTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-default'>00:00:00:074</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:11 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:12 AM</span>
+<span class='badge badge-default'>00:00:00:816</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -516,7 +369,7 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:46:40 pm</td>
+        <td>5:26:12 AM</td>
         <td>
           Test passed
         </td>
@@ -528,12 +381,12 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
         </li>
         <li class="test-item"  status="pass" test-id="8"
           author=""
-          tag="OpenCartTestSuite LoginPageTest"
+          tag="OpenCartTestSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">doLoginTest</p>
+            <p class="name">selectProductTest</p>
             <p class="text-sm">
-              <span>2:46:40 pm</span> / <span>00:00:00:973</span>
+              <span>5:26:12 AM</span> / <span>00:00:04:214</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -541,16 +394,16 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">doLoginTest</h5>
-<span class='badge badge-success'>05.13.2023 2:46:40 pm</span>
-<span class='badge badge-danger'>05.13.2023 2:46:41 pm</span>
-<span class='badge badge-default'>00:00:00:973</span>
+<h5 class="test-status text-pass">selectProductTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:12 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:16 AM</span>
+<span class='badge badge-default'>00:00:04:214</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -558,7 +411,91 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:46:41 pm</td>
+        <td>5:26:16 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="OpenCartTestSuite AccountsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">selectProductTest</p>
+            <p class="text-sm">
+              <span>5:26:16 AM</span> / <span>00:00:03:002</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">selectProductTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:16 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:19 AM</span>
+<span class='badge badge-default'>00:00:03:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:19 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="OpenCartTestSuite AccountsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">selectProductTest</p>
+            <p class="text-sm">
+              <span>5:26:19 AM</span> / <span>00:00:01:552</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">selectProductTest</h5>
+<span class='badge badge-success'>06.13.2023 5:26:19 AM</span>
+<span class='badge badge-danger'>06.13.2023 5:26:21 AM</span>
+<span class='badge badge-default'>00:00:01:552</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartTestSuite</span>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:26:21 AM</td>
         <td>
           Test passed
         </td>
@@ -577,79 +514,7 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>3</span>
-</span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>3 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:17 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:23 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:46:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -660,19 +525,15 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>3</span>
+<span class='badge log pass-bg'>10</span>
 </span>
-<p class="name">LoginPageTest</p>
-<p class="duration text-sm">8 tests</p>
+<p class="name">OpenCartTestSuite</p>
+<p class="duration text-sm">10 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>LoginPageTest</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>3 skipped</span>
+<h4>OpenCartTestSuite</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -683,60 +544,74 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:17 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:23 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:46:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+<a href="#" class="linked" test-id='1' id='1'>accPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>loginPageUrlTest</a>
+<a href="#" class="linked" test-id='2' id='2'>accPageHeaderTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>forgotPasswordLinkTest</a>
+<a href="#" class="linked" test-id='3' id='3'>isLogoutLinkExist</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>isRegisterLinkExistTest</a>
+<a href="#" class="linked" test-id='4' id='4'>accountPageSectionsTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>doLoginTest</a>
+<a href="#" class="linked" test-id='5' id='5'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>selectProductTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>selectProductTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>selectProductTest</a>
 </td>
 </tr>
 </tbody>
@@ -746,19 +621,15 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>3</span>
+<span class='badge log pass-bg'>10</span>
 </span>
-<p class="name">OpenCartTestSuite</p>
-<p class="duration text-sm">8 tests</p>
+<p class="name">AccountsPageTest</p>
+<p class="duration text-sm">10 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>OpenCartTestSuite</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>3 skipped</span>
+<h4>AccountsPageTest</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -769,60 +640,74 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:17 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:23 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>14:46:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:46:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+<a href="#" class="linked" test-id='1' id='1'>accPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>loginPageUrlTest</a>
+<a href="#" class="linked" test-id='2' id='2'>accPageHeaderTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>forgotPasswordLinkTest</a>
+<a href="#" class="linked" test-id='3' id='3'>isLogoutLinkExist</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>isRegisterLinkExistTest</a>
+<a href="#" class="linked" test-id='4' id='4'>accountPageSectionsTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:40 pm</td>
+<td>05:26:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>doLoginTest</a>
+<a href="#" class="linked" test-id='5' id='5'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>selectProductTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>selectProductTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:26:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>selectProductTest</a>
 </td>
 </tr>
 </tbody>
@@ -842,25 +727,25 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 13, 2023 02:45:41 pm</h3>
+<h3>Jun 13, 2023 05:25:50 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 13, 2023 02:46:41 pm</h3>
+<h3>Jun 13, 2023 05:26:21 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>10</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -876,13 +761,13 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>4</b> tests passed
+<div><small data-tooltip='100%'>
+<b>10</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='12%'><b>1</b> tests failed,
-<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -899,10 +784,10 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> events passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -918,7 +803,7 @@ Session ID: 70d1cd02cd0ebcc8dabfe08c135d8492
 </div></div>
 <script>
 var timeline = {
-"loginPageTitleTest":5.412,"loginPageTitleTest":5.183,"loginPageTitleTest":5.232,"loginPageTitleTest":5.195,"loginPageUrlTest":0.021,"forgotPasswordLinkTest":0.102,"isRegisterLinkExistTest":0.074,"doLoginTest":0.973
+"accPageTitleTest":0.19,"accPageHeaderTest":0.159,"isLogoutLinkExist":0.101,"accountPageSectionsTest":0.283,"searchTest":1.673,"searchTest":0.882,"searchTest":0.816,"selectProductTest":4.214,"selectProductTest":3.002,"selectProductTest":1.552
 };
 </script>
 <div class="row">
@@ -928,20 +813,20 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>LoginPageTest</td>
-<td>4</td>
-<td>1</td>
-<td>3</td>
+<td>OpenCartTestSuite</td>
+<td>10</td>
 <td>0</td>
-<td>50%</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
-<td>OpenCartTestSuite</td>
-<td>4</td>
-<td>1</td>
-<td>3</td>
+<td>AccountsPageTest</td>
+<td>10</td>
 <td>0</td>
-<td>50%</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -982,10 +867,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 1,
+passParent: 10,
+failParent: 0,
 warningParent: 0,
-skipParent: 3,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -999,10 +884,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 1,
+passEvents: 10,
+failEvents: 0,
 warningEvents: 0,
-skipEvents: 3,
+skipEvents: 0,
 infoEvents: 0
 };
 </script>        </div>
